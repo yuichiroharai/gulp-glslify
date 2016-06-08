@@ -1,0 +1,30 @@
+{
+  "name": "gulp-glslify",
+  "version": "0.1.0",
+  "description": "gulp plugin for glslify https://github.com/stackgl/glslify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yuichiroharai@github.com/yuichiroharai/gulp-glslify.git"
+  },
+  "author": {
+    "name": "Yuichiroh Arai",
+    "url": "http://www.yuichiroharai.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuichiroharai/gulp-glslify/issues"
+  },
+  "homepage": "https://github.com/yuichiroharai/gulp-glslify#readme",
+  "dependencies": {
+    "glslify": "^5.0.2",
+    "glslify-hex": "^2.0.1",
+    "glslify-import": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "through2": "^2.0.1"
+  },
+  "private": "true"
+}
