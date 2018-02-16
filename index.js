@@ -1,4 +1,5 @@
 // modules for gulp
+var path = require('path');
 var through2 = require('through2');
 var gulpUtil = require('gulp-util');
 var PluginError = gulpUtil.PluginError;
@@ -25,7 +26,7 @@ function gulpGlslify(options) {
     var stream = through2.obj(function (file, enc, cb) {
 
         // adjust to target file
-        options.basedir = file.history[0].split("/").slice(0, -1).join("/");
+        options.basedir = path.dirname(file.history[0]);
 
         if (file.isNull()) {
             cb(null, file);
